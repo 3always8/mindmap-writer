@@ -1,0 +1,24 @@
+models:
+  vision:
+    provider: "google"
+    model: "gemini-flash-latest"
+    temperature: 0.1
+    max_tokens: 8192
+  text:
+    provider: "google"
+    model: "gemini-flash-latest"
+    temperature: 0.0
+    max_tokens: 8192
+
+processing:
+  chapter_detect_batch_size: 10
+  max_pages_per_vision_call: 15
+  max_retries: 2
+  max_concurrency: 3
+  image_dpi: 150
+  image_quality: 85
+
+output:
+  dir: "./output"
+  create_index: true
+  merge_line_threshold: 500

@@ -209,3 +209,9 @@ __marimo__/
 # Project specific
 output/
 *.pdf
+
+# Session data
+.claude/
+
+# Old output
+output_old/
